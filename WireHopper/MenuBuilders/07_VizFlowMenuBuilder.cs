@@ -24,10 +24,11 @@ namespace WireHopper
             upstreamFlow.Image = Resources.In;
 
             //DownStream
-            var downFlow = new ToolStripMenuItem("Upstream Flow");
+            var downFlow = new ToolStripMenuItem("Downstream Flow");
             downFlow.Click += (s, e) => VisualizeFlowOperations.IsolateFullFlow_Downstream();
             flowViz.DropDownItems.Add(downFlow);
             downFlow.Image = Resources.Out;
         }
     }
 }
+
